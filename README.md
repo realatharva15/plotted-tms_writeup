@@ -137,7 +137,7 @@ we find a file upload vulnerability at the settings panel of the admin dashboard
 
 # Shell as www-user:
 
-navigate to the settings (http://<target_ip>:445/management/admin/?page=system_info) and then in the bachkground image upload, you can see it for yourself that there is no sanitization for the file extensions of the images we upload. which means we can upload a php revershell to it
+navigate to the settings (http://<target_ip>:445/management/admin/?page=system_info) and then in the background image upload, you can see it for yourself that there is no sanitization for the file extensions of the images we upload. which means we can upload a php revershell to it
 
 we upload the reverse shell from our directory /usr/share/webshells/php/reverseshell/shell.php
 

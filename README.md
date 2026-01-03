@@ -52,7 +52,7 @@ on accessing /admin we can see another directory named /id_rsa. on clicking on i
 
 VHJ1c3QgbWUgaXQgaXMgbm90IHRoaXMgZWFzeS4ubm93IGdldCBiYWNrIHRvIGVudW1lcmF0aW9uIDpE
 
-lets use cyber chef to decode it. after decoding it we get to know that it is just a message from the creator of the room taunting us. lets keep on enumerating. even the /shadow had a similar message encoded in base64
+lets use cyber chef to decode it. after decoding it we get to know that it is just a message from the creator of the room taunting us. lets keep on enumerating. even the /shadow had a similar message encoded in base64. 
 instead of port 80 lets enumerate the port 445
 
 ```bash
@@ -73,6 +73,8 @@ gobuster dir -u http://<target_ip>:445 -w /usr/share/wordlists/dirb/common.txt
 
 lets access the /management directory. on the main page there is a Traffic Offense Management System. there is also a login page at /management/admin/login.php
 we bypass the login page using an SQL injection
+
+# Bypassing the Login Page: 
 
 enter this in the username field and type any random password in the password field
 ```bash

@@ -202,7 +202,7 @@ chmod +x linpeas.sh
 we find a cronjob running every minute at /var/www/scripts/backup.sh which is owned by plot_admin
 lets find a way to exploit this script. 
 
-* *     * * *   plot_admin /var/www/scripts/backup.sh
+* * * * *   plot_admin /var/www/scripts/backup.sh
 
 since we do not have access to the backup.sh we cannot edit the file and append a revershell to it. so lets create a malicious file with the same name and path 
 

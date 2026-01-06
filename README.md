@@ -36,7 +36,7 @@ lets start with enumerating the http webserver at port 80 by fuzzing the directo
 gobuster dir -u http://<target_ip> -w /usr/share/wordlists/dirb/common.txt
 ```
 
-/admin                (Status: 301) [Size: 312] [--> http://10.82.186.90/admin/]                                                                    
+/admin                (Status: 301) [Size: 312] [--> http://<target_ip>/admin/]                                                                    
 
 /index.html           (Status: 200) [Size: 10918]
 
